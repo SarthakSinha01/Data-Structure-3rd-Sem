@@ -57,7 +57,7 @@ int main()
 	int sh;
 	int data;
 	do {
-		printf("Enter \n(1) Push \n(2) Pop\n");
+		printf("Enter \n(1) Push \n(2) Pop\n(3) Display\n(4) Exit");
 		scanf("%d", &sh);
 		getchar();
 		switch(sh)
@@ -77,12 +77,13 @@ int main()
 			display(s);
 			break;
 
+                        case 4:
+                        break;
+                        
 			default :
 			printf("You have entered a Wrong Choice\n");
 			break;
 		}
-		printf("Want To Continue ?");
-		scanf("%c", &op);
-	}while(op == 'Y' || op == 'y');
+	}while(sh != 4);
 	return 0;
 }
