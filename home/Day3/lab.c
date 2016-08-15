@@ -239,6 +239,7 @@ struct node * del_from_pos(struct node *head, int pos)
 	{
 		prev = curr;
 		curr = curr -> next;
+		i++;
 	}
 	if(i == pos)
 	{
