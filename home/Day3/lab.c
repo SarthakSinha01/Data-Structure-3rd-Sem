@@ -120,6 +120,7 @@ struct node * insert_at_end(struct node * head, int data)
 	new = create();
 	curr = head;
 	new -> data = data;
+	new -> next = NULL;
 
 	while(curr != NULL)
 	{
